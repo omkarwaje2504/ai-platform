@@ -1,0 +1,13 @@
+{
+    "type": "website",
+    "url": "https://ai-platform.github.io",
+    "title": "AI Avatar platform",
+    "description": "Educate your patient with new AI feature.",
+    "siteName": "Respicare Doctor AI Video",
+    "images": [
+      {
+        "url": "https://s3-us-west-2.amazonaws.com/speedybrandimages/tmp_6b7a260e-a717-4625-b845-a7f8ee929ee3.webp"
+      }
+    ]
+  }
+  
