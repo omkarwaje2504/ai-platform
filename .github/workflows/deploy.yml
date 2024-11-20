@@ -30,22 +30,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # - name: Cache Bun node_modules
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: node_modules
-      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: ${{ runner.os }}-node-
+      - name: Cache Bun node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       
-      # - name: Setup Bun
-      #   uses: oven-sh/setup-bun@v1
-      #   with:
-      #     bun-version: latest
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
 
-      # - name: Build Website
-      #   run: |
-      #     bun install \
-      #     && bun run build
+      - name: Build Website
+        run: |
+          bun install \
+          && bun run build
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
