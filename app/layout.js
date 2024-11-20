@@ -1,5 +1,7 @@
-import localFont from "next/font/local";
+
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 export const metadata = {
   title: "AI Avatar platform",
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
         className={` antialiased overflow-hidden`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
